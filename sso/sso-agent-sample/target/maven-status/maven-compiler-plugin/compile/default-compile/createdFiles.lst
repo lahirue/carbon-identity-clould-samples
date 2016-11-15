@@ -1,0 +1,4 @@
+org/wso2/sample/is/sso/agent/ForwardingServlet.class
+org/wso2/sample/is/sso/agent/SampleContextEventListener.class
+org/wso2/sample/is/sso/agent/SSOAgentSampleFilter.class
+org/wso2/sample/is/sso/agent/SampleAttributesRequestor.class

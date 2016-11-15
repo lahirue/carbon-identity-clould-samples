@@ -1,0 +1,15 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Identity Server : SSO Samples
+
+
+From: 'an unknown organization'
+  - bcprov-jdk15  bouncycastle:bcprov-jdk15:jar:132
+
+
+
+
+
