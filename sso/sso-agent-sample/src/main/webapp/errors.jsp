@@ -63,7 +63,7 @@
             </tr>
 
         </table>
-        <h1>Travelocity.COM</h1>
+        <h1>Lebens.COM</h1>
         <hr />
         <a href="../avis.com"> Avis.COM </a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.jsp"> Go to Login page </a>
         <hr/>
