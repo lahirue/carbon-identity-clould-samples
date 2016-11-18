@@ -1,3 +1,5 @@
+<%@ page import="javax.mail.Session" %>
+<%@ page import="java.util.StringTokenizer" %>
 <!--
 ~ Copyright (c) WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
 ~
@@ -38,6 +40,17 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
 </head>
+
+<%
+
+    String newDomain = request.getParameter("tenantDomain");
+    String currentDomain = (String) session.getAttribute("tenantDomain");
+
+    if (newDomain != null && currentDomain!= newDomain) {
+        session.setAttribute("tenantDomain", newDomain);
+    }
+
+%>
 <body>
 
 <!-- preloader section -->

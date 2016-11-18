@@ -17,6 +17,8 @@
 -->
 <%@ page import="org.wso2.carbon.identity.sso.agent.bean.LoggedInSessionBean" %>
 <%@ page import="org.wso2.carbon.identity.sso.agent.SSOAgentConstants" %>
+
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
@@ -42,14 +44,15 @@
 </head>
 
 <%
+    String domin =  (String)session.getAttribute("tenantDomain");
     String claimedId = null;
     String subjectId = null;
     if(request.getSession(false) != null &&
             request.getSession(false).getAttribute(SSOAgentConstants.SESSION_BEAN_NAME) == null){
-        request.getSession().invalidate();
+        request.getSession(false).invalidate();
 %>
 <script type="text/javascript">
-    location.href = "index.jsp";
+    location.href = "index.jsp?tenantDomain=<%=domin%>";
 </script>
 <%
         return;
@@ -65,7 +68,7 @@
         } else {
 %>
 <script type="text/javascript">
-    location.href = "index.jsp";
+    location.href = "index.jsp?tenantDomain=<%=domin%>";
 </script>
 <%
         return;
@@ -73,12 +76,13 @@
 } else {
 %>
 <script type="text/javascript">
-    location.href = "index.jsp";
+    location.href = "index.jsp?tenantDomain=<%=domin%>";
 </script>
 <%
         return;
     }
 %>
+
 
 
 <body>
@@ -116,7 +120,7 @@
                         <%
                             if(subjectId != null){
                         %>
-                        <%=subjectId%>
+                        <%=subjectId %>
                         <%
                         } else if (claimedId != null) {
                         %>
@@ -125,7 +129,7 @@
                             }
                         %><span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="logout?SAML2.HTTPBinding=HTTP-Redirect">Logout</a></li>
+                        <li><a href="logout?SAML2.HTTPBinding=HTTP-POST">Logout</a></li>
                     </ul>
 
 
