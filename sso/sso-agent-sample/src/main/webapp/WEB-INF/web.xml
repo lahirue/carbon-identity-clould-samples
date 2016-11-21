@@ -16,12 +16,12 @@
 ~ specific language governing permissions and limitations
 ~ under the License.
 -->
-<web-app id="lebens.com" version="2.5"
+<web-app id="francesca.com" version="2.5"
          xmlns="http://java.sun.com/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-    <display-name>Lebens.COM</display-name>
+    <display-name>Francesca.COM</display-name>
 
     <servlet>
         <servlet-name>ForwardingServlet</servlet-name>
