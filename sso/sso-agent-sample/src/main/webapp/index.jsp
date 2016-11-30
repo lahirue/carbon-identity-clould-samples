@@ -23,7 +23,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Osteriana Francesca</title>
+    <title>Italiano</title>
 
     <meta name="description" content="">
     <meta name="theme-color" content="#444444">
@@ -49,7 +49,7 @@
 <div class="banner">
     <div class="header">
         <div class="header-inner container clear">
-            <a class="logo" href="#"><span class="sr">Osteriana Francesca</span></a>
+            <a class="logo" href="#"><span class="sr">Italiano</span></a>
             <input type="checkbox" id="navigation-toggle-checkbox" name="navigation-toggle-checkbox" class="navigation-toggle-checkbox sr">
             <label for="navigation-toggle-checkbox" class="navigation-toggle-label" onclick>
         <span class="navigation-toggle-label-inner">

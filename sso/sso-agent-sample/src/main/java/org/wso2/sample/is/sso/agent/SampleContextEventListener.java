@@ -41,9 +41,9 @@ public class SampleContextEventListener implements ServletContextListener {
 
         properties = new Properties();
         try {
-            if(servletContextEvent.getServletContext().getContextPath().contains("francesca.com")) {
+            if(servletContextEvent.getServletContext().getContextPath().contains("italiano.com")) {
                 properties.load(servletContextEvent.getServletContext().
-                        getResourceAsStream("/WEB-INF/classes/francesca.properties"));
+                        getResourceAsStream("/WEB-INF/classes/italiano.properties"));
             } else if(servletContextEvent.getServletContext().getContextPath().contains("avis.com")) {
                 properties.load(servletContextEvent.getServletContext().
                         getResourceAsStream("/WEB-INF/classes/avis.properties"));
